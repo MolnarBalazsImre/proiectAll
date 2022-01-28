@@ -1,0 +1,64 @@
+GET http://localhost:8000/loged/loged
+
+
+###
+
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+
+{
+    "name": "Balazs",
+    "pass": "password"
+}
+
+###
+
+POST http://localhost:8000/auth/register
+Content-Type: application/json
+
+{
+    "name": "asdf",
+    "pass": "asdf",
+    "email": "asdf@gmail.com"
+}
+
+###
+
+POST http://localhost:8000/auth/forgot
+Content-Type: application/json
+
+{
+    "email": "asdf@gmail.com"
+}
+
+###
+
+POST http://localhost:8000/loged/addBook
+Content-Type: application/json
+
+{
+    "title": "Title",
+    "author": "Author",
+    "categ": "Category",
+    "number": 45
+}
+
+###
+
+POST http://localhost:8000/loged/rent
+Content-Type: application/json
+
+{
+    "book": "Book",
+    "user": "User",
+    "days": 45
+}
+
+###
+
+POST http://localhost:8000/loged/allRent
+Content-Type: application/json
+
+{
+    "user": "User"
+}
